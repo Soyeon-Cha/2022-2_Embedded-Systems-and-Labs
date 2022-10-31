@@ -1,9 +1,11 @@
 #include "msp.h"
 #define S1BUT ((P1->IN&(1<<1))==0x00)
 #define S2BUT ((P1->IN&(1<<4))==0x00)
+
 /**
  * main.c
  */
+
 void main(void)
 {
     P1->DIR&=~(1<<1|1<<4);
